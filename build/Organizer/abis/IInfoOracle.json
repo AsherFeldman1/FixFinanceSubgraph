@@ -1,0 +1,346 @@
+[
+  {
+    "inputs": [],
+    "name": "MinimumOrderbookFee",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TreasuryFeeIsCollected",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sendTo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_wrapperAddr",
+        "type": "address"
+      }
+    ],
+    "name": "WrapperOrderbookFeeBips",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fixCapitalPoolAddress",
+        "type": "address"
+      }
+    ],
+    "name": "FCPOrderbookFeeBips",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fixCapitalPoolAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getOrderbookFeeBips",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      }
+    ],
+    "name": "DelegatedControllers",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultFactoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_wrapperAddress",
+        "type": "address"
+      }
+    ],
+    "name": "StabilityFeeAPR",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "stabilityFeeAPR",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultFactoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_assetAddress",
+        "type": "address"
+      }
+    ],
+    "name": "collateralWhitelist",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "underlyingAsset",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultFactoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_FCPaddress",
+        "type": "address"
+      }
+    ],
+    "name": "FCPtoWrapper",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "wrapperAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_manager",
+        "type": "address"
+      }
+    ],
+    "name": "setDelegatedController",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_wrapper",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_orderbookFeeBips",
+        "type": "uint8"
+      }
+    ],
+    "name": "wrapperSetOrderbookFeeConstant",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fixCapitalPoolAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_orderbookFeeBips",
+        "type": "uint8"
+      }
+    ],
+    "name": "setOrderbookFeeConstant",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultFactoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_wrapperAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_stabilityFeeAPR",
+        "type": "uint64"
+      }
+    ],
+    "name": "setStabilityFeeAPR",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultFactoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_wrapperAddress",
+        "type": "address"
+      }
+    ],
+    "name": "whitelistWrapper",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultFactoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_assetAddress",
+        "type": "address"
+      }
+    ],
+    "name": "whitelistAsset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultFactoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_FCPaddress",
+        "type": "address"
+      }
+    ],
+    "name": "whitelistFixCapitalPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderbookFeeBips",
+        "type": "uint8"
+      }
+    ],
+    "name": "setMinimumOrderbookFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_TreasuryFeeIsCollected",
+        "type": "bool"
+      }
+    ],
+    "name": "setTreasuryFeeIsCollected",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

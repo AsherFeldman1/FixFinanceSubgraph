@@ -1,0 +1,3210 @@
+{
+  "contractName": "dummyAggregator",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_decimals",
+          "type": "uint8"
+        },
+        {
+          "internalType": "string",
+          "name": "_description",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "description",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "_answer",
+          "type": "int256"
+        }
+      ],
+      "name": "addRound",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_roundId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_roundId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestRound",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_decimals\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"_description\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"_answer\",\"type\":\"int256\"}],\"name\":\"addRound\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"description\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_roundId\",\"type\":\"uint256\"}],\"name\":\"getAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_roundId\",\"type\":\"uint256\"}],\"name\":\"getTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestRound\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/asher/FixFinanceV1/contracts/oracle/dummy/dummyAggregator.sol\":\"dummyAggregator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/asher/FixFinanceV1/contracts/oracle/dummy/dummyAggregator.sol\":{\"keccak256\":\"0x438d52b3e387303b6e97da85404605d9363c8745206556c064b217e44b35bc83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0595a4076df571bb78e8d99437eefdeb09188f70c369a5d5186b93df85f32ff2\",\"dweb:/ipfs/Qmc8vax4bAGiC1igcfanWspmVmPdfCYRCAwxGUwRWgvHZn\"]},\"/home/asher/FixFinanceV1/contracts/oracle/interfaces/IChainlinkAggregator.sol\":{\"keccak256\":\"0x84c1d70b8eb43e3d80d1bc60956d659b7e5af658d1a395c038e88e2ac709cc9c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bb24c5fc06da480b2894ab3c442c37662ce5973d6fdfef65183756049a8541a0\",\"dweb:/ipfs/QmaAx8GBi11Wb2m6i3w9L2URSBCX2Gf62G1iXBdnDZLyRP\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161061c38038061061c8339818101604052604081101561003357600080fd5b81019080805190602001909291908051604051939291908464010000000082111561005d57600080fd5b8382019150602082018581111561007357600080fd5b825186600182028301116401000000008211171561009057600080fd5b8083526020830192505050908051906020019080838360005b838110156100c45780820151818401526020810190506100a9565b50505050905090810190601f1680156100f15780820380516001836020036101000a031916815260200191505b50604052505050816000806101000a81548160ff021916908360ff1602179055508060029080519060200190610128929190610187565b50600160405180604001604052806000815260200142815250908060018154018082558091505060019003906000526020600020906002020160009091909190915060008201518160000155602082015181600101555050505061022c565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101c857805160ff19168380011785556101f6565b828001600101855582156101f6579182015b828111156101f55782518255916020019190600101906101da565b5b5090506102039190610207565b5090565b61022991905b8082111561022557600081600090555060010161020d565b5090565b90565b6103e18061023b6000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c8063668a0f021161005b578063668a0f02146100f25780637284e41614610110578063b5ab58dc14610193578063b633620c146101d55761007d565b8063313ce5671461008257806350d25bcd146100a657806351f15c4f146100c4575b600080fd5b61008a610217565b604051808260ff1660ff16815260200191505060405180910390f35b6100ae610229565b6040518082815260200191505060405180910390f35b6100f0600480360360208110156100da57600080fd5b8101908080359060200190929190505050610255565b005b6100fa6102ae565b6040518082815260200191505060405180910390f35b6101186102bd565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561015857808201518184015260208101905061013d565b50505050905090810190601f1680156101855780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6101bf600480360360208110156101a957600080fd5b810190808035906020019092919050505061035b565b6040518082815260200191505060405180910390f35b610201600480360360208110156101eb57600080fd5b8101908080359060200190929190505050610383565b6040518082815260200191505060405180910390f35b6000809054906101000a900460ff1681565b60006001808080549050038154811061023e57fe5b906000526020600020906002020160000154905090565b600160405180604001604052808381526020014281525090806001815401808255809150506001900390600052602060002090600202016000909190919091506000820151816000015560208201518160010155505050565b60006001808054905003905090565b60028054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103535780601f1061032857610100808354040283529160200191610353565b820191906000526020600020905b81548152906001019060200180831161033657829003601f168201915b505050505081565b60006001828154811061036a57fe5b9060005260206000209060020201600001549050919050565b60006001828154811061039257fe5b906000526020600020906002020160010154905091905056fea2646970667358221220843a50178d7c5a3223a0bfe0ee44a138260100f8656bd410ac319e93221350c664736f6c63430006080033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c8063668a0f021161005b578063668a0f02146100f25780637284e41614610110578063b5ab58dc14610193578063b633620c146101d55761007d565b8063313ce5671461008257806350d25bcd146100a657806351f15c4f146100c4575b600080fd5b61008a610217565b604051808260ff1660ff16815260200191505060405180910390f35b6100ae610229565b6040518082815260200191505060405180910390f35b6100f0600480360360208110156100da57600080fd5b8101908080359060200190929190505050610255565b005b6100fa6102ae565b6040518082815260200191505060405180910390f35b6101186102bd565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561015857808201518184015260208101905061013d565b50505050905090810190601f1680156101855780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6101bf600480360360208110156101a957600080fd5b810190808035906020019092919050505061035b565b6040518082815260200191505060405180910390f35b610201600480360360208110156101eb57600080fd5b8101908080359060200190929190505050610383565b6040518082815260200191505060405180910390f35b6000809054906101000a900460ff1681565b60006001808080549050038154811061023e57fe5b906000526020600020906002020160000154905090565b600160405180604001604052808381526020014281525090806001815401808255809150506001900390600052602060002090600202016000909190919091506000820151816000015560208201518160010155505050565b60006001808054905003905090565b60028054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103535780601f1061032857610100808354040283529160200191610353565b820191906000526020600020905b81548152906001019060200180831161033657829003601f168201915b505050505081565b60006001828154811061036a57fe5b9060005260206000209060020201600001549050919050565b60006001828154811061039257fe5b906000526020600020906002020160010154905091905056fea2646970667358221220843a50178d7c5a3223a0bfe0ee44a138260100f8656bd410ac319e93221350c664736f6c63430006080033",
+  "immutableReferences": {},
+  "sourceMap": "115:887:108:-:0;;;309:164;5:9:-1;2:2;;;27:1;24;17:12;2:2;309:164:108;;;;;;;;;;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;309:164:108;;;;;;;;;;;;;;;;;;;;;;19:11:-1;14:3;11:20;8:2;;;44:1;41;34:12;8:2;71:11;66:3;62:21;55:28;;123:4;118:3;114:14;159:9;141:16;138:31;135:2;;;182:1;179;172:12;135:2;219:3;213:10;330:9;325:1;311:12;307:20;289:16;285:43;282:58;261:11;247:12;244:29;233:115;230:2;;;361:1;358;351:12;230:2;384:12;379:3;372:25;420:4;415:3;411:14;404:21;;0:432;;309:164:108;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;309:164:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;388:9;377:8;;:20;;;;;;;;;;;;;;;;;;415:12;401:11;:26;;;;;;;;;;;;:::i;:::-;;431:6;443:25;;;;;;;;449:1;443:25;;;;452:15;443:25;;;431:38;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;431:38:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;309:164;;115:887;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "115:887:108:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;115:887:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;12:1:-1;9;2:12;220:30:108;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;893:105;;;:::i;:::-;;;;;;;;;;;;;;;;;;;476:92;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;476:92:108;;;;;;;;;;;;;;;;;:::i;:::-;;800:90;;;:::i;:::-;;;;;;;;;;;;;;;;;;;271:34;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;271:34:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;689:108;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;689:108:108;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;571:115;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;571:115:108;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;220:30;;;;;;;;;;;;;:::o;893:105::-;948:3;964:6;985:1;971:6;:13;;;;:15;964:23;;;;;;;;;;;;;;;;;;:30;;;957:37;;893:105;:::o;476:92::-;520:6;532:31;;;;;;;;538:7;532:31;;;;547:15;532:31;;;520:44;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;520:44:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;476:92;:::o;800:90::-;854:4;885:1;871:6;:13;;;;:15;864:22;;800:90;:::o;271:34::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;689:108::-;754:3;770:6;777:8;770:16;;;;;;;;;;;;;;;;;;:23;;;763:30;;689:108;;;:::o;571:115::-;639:4;656:6;663:8;656:16;;;;;;;;;;;;;;;;;;:26;;;649:33;;571:115;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.8 <0.7.0;\n\nimport \"../interfaces/IChainlinkAggregator.sol\";\n\ncontract dummyAggregator is IChainlinkAggregator {\n\n\tstruct round {\n\t\tint answer;\n\t\tuint timestamp;\n\t}\n\n\tuint8 public override decimals;\n\tround[] rounds;\n\n\tstring public override description;\n\n\tconstructor(uint8 _decimals, string memory _description) public {\n\t\tdecimals = _decimals;\n\t\tdescription = _description;\n\t\trounds.push(round(0, block.timestamp));\n\t}\n\n\tfunction addRound(int _answer) external {\n\t\trounds.push(round(_answer, block.timestamp));\n\t}\n\n\tfunction getTimestamp(uint _roundId) external view override returns(uint) {\n\t\treturn rounds[_roundId].timestamp;\n\t}\n\n\tfunction getAnswer(uint _roundId) external view override returns(int) {\n\t\treturn rounds[_roundId].answer;\n\t}\n\n\tfunction latestRound() external view override returns(uint) {\n\t\treturn rounds.length-1;\n\t}\n\n\tfunction latestAnswer() external view override returns(int) {\n\t\treturn rounds[rounds.length-1].answer;\n\t}\n\n\n}\n",
+  "sourcePath": "/home/asher/FixFinanceV1/contracts/oracle/dummy/dummyAggregator.sol",
+  "ast": {
+    "absolutePath": "/home/asher/FixFinanceV1/contracts/oracle/dummy/dummyAggregator.sol",
+    "exportedSymbols": {
+      "dummyAggregator": [
+        64413
+      ]
+    },
+    "id": 64414,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 64298,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".8",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:108"
+      },
+      {
+        "absolutePath": "/home/asher/FixFinanceV1/contracts/oracle/interfaces/IChainlinkAggregator.sol",
+        "file": "../interfaces/IChainlinkAggregator.sol",
+        "id": 64299,
+        "nodeType": "ImportDirective",
+        "scope": 64414,
+        "sourceUnit": 64451,
+        "src": "65:48:108",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 64300,
+              "name": "IChainlinkAggregator",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 64450,
+              "src": "143:20:108",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IChainlinkAggregator_$64450",
+                "typeString": "contract IChainlinkAggregator"
+              }
+            },
+            "id": 64301,
+            "nodeType": "InheritanceSpecifier",
+            "src": "143:20:108"
+          }
+        ],
+        "contractDependencies": [
+          64450
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 64413,
+        "linearizedBaseContracts": [
+          64413,
+          64450
+        ],
+        "name": "dummyAggregator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "dummyAggregator.round",
+            "id": 64306,
+            "members": [
+              {
+                "constant": false,
+                "id": 64303,
+                "mutability": "mutable",
+                "name": "answer",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 64306,
+                "src": "185:10:108",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName": {
+                  "id": 64302,
+                  "name": "int",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "185:3:108",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 64305,
+                "mutability": "mutable",
+                "name": "timestamp",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 64306,
+                "src": "199:14:108",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 64304,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "199:4:108",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "round",
+            "nodeType": "StructDefinition",
+            "scope": 64413,
+            "src": "168:49:108",
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              64425
+            ],
+            "constant": false,
+            "functionSelector": "313ce567",
+            "id": 64309,
+            "mutability": "mutable",
+            "name": "decimals",
+            "nodeType": "VariableDeclaration",
+            "overrides": {
+              "id": 64308,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "233:8:108"
+            },
+            "scope": 64413,
+            "src": "220:30:108",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 64307,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "220:5:108",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 64312,
+            "mutability": "mutable",
+            "name": "rounds",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 64413,
+            "src": "253:14:108",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+              "typeString": "struct dummyAggregator.round[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 64310,
+                "name": "round",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 64306,
+                "src": "253:5:108",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_round_$64306_storage_ptr",
+                  "typeString": "struct dummyAggregator.round"
+                }
+              },
+              "id": 64311,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "253:7:108",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage_ptr",
+                "typeString": "struct dummyAggregator.round[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "baseFunctions": [
+              64420
+            ],
+            "constant": false,
+            "functionSelector": "7284e416",
+            "id": 64315,
+            "mutability": "mutable",
+            "name": "description",
+            "nodeType": "VariableDeclaration",
+            "overrides": {
+              "id": 64314,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "285:8:108"
+            },
+            "scope": 64413,
+            "src": "271:34:108",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 64313,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "271:6:108",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 64340,
+              "nodeType": "Block",
+              "src": "373:100:108",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 64324,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 64322,
+                      "name": "decimals",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64309,
+                      "src": "377:8:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 64323,
+                      "name": "_decimals",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64317,
+                      "src": "388:9:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "src": "377:20:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 64325,
+                  "nodeType": "ExpressionStatement",
+                  "src": "377:20:108"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 64328,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 64326,
+                      "name": "description",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64315,
+                      "src": "401:11:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 64327,
+                      "name": "_description",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64319,
+                      "src": "415:12:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "401:26:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 64329,
+                  "nodeType": "ExpressionStatement",
+                  "src": "401:26:108"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 64334,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "449:1:108",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          },
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 64335,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -4,
+                              "src": "452:5:108",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 64336,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "452:15:108",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "id": 64333,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 64306,
+                          "src": "443:5:108",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_round_$64306_storage_ptr_$",
+                            "typeString": "type(struct dummyAggregator.round storage pointer)"
+                          }
+                        },
+                        "id": 64337,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "443:25:108",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_round_$64306_memory_ptr",
+                          "typeString": "struct dummyAggregator.round memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_round_$64306_memory_ptr",
+                          "typeString": "struct dummyAggregator.round memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 64330,
+                        "name": "rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64312,
+                        "src": "431:6:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+                          "typeString": "struct dummyAggregator.round storage ref[] storage ref"
+                        }
+                      },
+                      "id": 64332,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "431:11:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_round_$64306_storage_$returns$__$",
+                        "typeString": "function (struct dummyAggregator.round storage ref)"
+                      }
+                    },
+                    "id": 64338,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "431:38:108",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 64339,
+                  "nodeType": "ExpressionStatement",
+                  "src": "431:38:108"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 64341,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 64320,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64317,
+                  "mutability": "mutable",
+                  "name": "_decimals",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64341,
+                  "src": "321:15:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 64316,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:5:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 64319,
+                  "mutability": "mutable",
+                  "name": "_description",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64341,
+                  "src": "338:26:108",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 64318,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "338:6:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:45:108"
+            },
+            "returnParameters": {
+              "id": 64321,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "373:0:108"
+            },
+            "scope": 64413,
+            "src": "309:164:108",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 64356,
+              "nodeType": "Block",
+              "src": "516:52:108",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 64350,
+                            "name": "_answer",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 64343,
+                            "src": "538:7:108",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 64351,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -4,
+                              "src": "547:5:108",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 64352,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "547:15:108",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "id": 64349,
+                          "name": "round",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 64306,
+                          "src": "532:5:108",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_round_$64306_storage_ptr_$",
+                            "typeString": "type(struct dummyAggregator.round storage pointer)"
+                          }
+                        },
+                        "id": 64353,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "532:31:108",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_round_$64306_memory_ptr",
+                          "typeString": "struct dummyAggregator.round memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_round_$64306_memory_ptr",
+                          "typeString": "struct dummyAggregator.round memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 64346,
+                        "name": "rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64312,
+                        "src": "520:6:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+                          "typeString": "struct dummyAggregator.round storage ref[] storage ref"
+                        }
+                      },
+                      "id": 64348,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "520:11:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_round_$64306_storage_$returns$__$",
+                        "typeString": "function (struct dummyAggregator.round storage ref)"
+                      }
+                    },
+                    "id": 64354,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "520:44:108",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 64355,
+                  "nodeType": "ExpressionStatement",
+                  "src": "520:44:108"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "51f15c4f",
+            "id": 64357,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addRound",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 64344,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64343,
+                  "mutability": "mutable",
+                  "name": "_answer",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64357,
+                  "src": "494:11:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 64342,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "494:3:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "493:13:108"
+            },
+            "returnParameters": {
+              "id": 64345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "516:0:108"
+            },
+            "scope": 64413,
+            "src": "476:92:108",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              64449
+            ],
+            "body": {
+              "id": 64370,
+              "nodeType": "Block",
+              "src": "645:41:108",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 64365,
+                        "name": "rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64312,
+                        "src": "656:6:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+                          "typeString": "struct dummyAggregator.round storage ref[] storage ref"
+                        }
+                      },
+                      "id": 64367,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 64366,
+                        "name": "_roundId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64359,
+                        "src": "663:8:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "656:16:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_round_$64306_storage",
+                        "typeString": "struct dummyAggregator.round storage ref"
+                      }
+                    },
+                    "id": 64368,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "timestamp",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 64305,
+                    "src": "656:26:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 64364,
+                  "id": 64369,
+                  "nodeType": "Return",
+                  "src": "649:33:108"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "b633620c",
+            "id": 64371,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTimestamp",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 64361,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "622:8:108"
+            },
+            "parameters": {
+              "id": 64360,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64359,
+                  "mutability": "mutable",
+                  "name": "_roundId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64371,
+                  "src": "593:13:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64358,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "593:4:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "592:15:108"
+            },
+            "returnParameters": {
+              "id": 64364,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64363,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64371,
+                  "src": "639:4:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64362,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "639:4:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "638:6:108"
+            },
+            "scope": 64413,
+            "src": "571:115:108",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              64442
+            ],
+            "body": {
+              "id": 64384,
+              "nodeType": "Block",
+              "src": "759:38:108",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 64379,
+                        "name": "rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64312,
+                        "src": "770:6:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+                          "typeString": "struct dummyAggregator.round storage ref[] storage ref"
+                        }
+                      },
+                      "id": 64381,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 64380,
+                        "name": "_roundId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64373,
+                        "src": "777:8:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "770:16:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_round_$64306_storage",
+                        "typeString": "struct dummyAggregator.round storage ref"
+                      }
+                    },
+                    "id": 64382,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "answer",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 64303,
+                    "src": "770:23:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 64378,
+                  "id": 64383,
+                  "nodeType": "Return",
+                  "src": "763:30:108"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "b5ab58dc",
+            "id": 64385,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAnswer",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 64375,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "737:8:108"
+            },
+            "parameters": {
+              "id": 64374,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64373,
+                  "mutability": "mutable",
+                  "name": "_roundId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64385,
+                  "src": "708:13:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64372,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "708:4:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "707:15:108"
+            },
+            "returnParameters": {
+              "id": 64378,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64377,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64385,
+                  "src": "754:3:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 64376,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "754:3:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "753:5:108"
+            },
+            "scope": 64413,
+            "src": "689:108:108",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              64435
+            ],
+            "body": {
+              "id": 64396,
+              "nodeType": "Block",
+              "src": "860:30:108",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 64394,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 64391,
+                        "name": "rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64312,
+                        "src": "871:6:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+                          "typeString": "struct dummyAggregator.round storage ref[] storage ref"
+                        }
+                      },
+                      "id": 64392,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "871:13:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 64393,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "885:1:108",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "871:15:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 64390,
+                  "id": 64395,
+                  "nodeType": "Return",
+                  "src": "864:22:108"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "668a0f02",
+            "id": 64397,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "latestRound",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 64387,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "837:8:108"
+            },
+            "parameters": {
+              "id": 64386,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "820:2:108"
+            },
+            "returnParameters": {
+              "id": 64390,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64389,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64397,
+                  "src": "854:4:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64388,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "854:4:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "853:6:108"
+            },
+            "scope": 64413,
+            "src": "800:90:108",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              64430
+            ],
+            "body": {
+              "id": 64411,
+              "nodeType": "Block",
+              "src": "953:45:108",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 64403,
+                        "name": "rounds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64312,
+                        "src": "964:6:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+                          "typeString": "struct dummyAggregator.round storage ref[] storage ref"
+                        }
+                      },
+                      "id": 64408,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 64407,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 64404,
+                            "name": "rounds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 64312,
+                            "src": "971:6:108",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_round_$64306_storage_$dyn_storage",
+                              "typeString": "struct dummyAggregator.round storage ref[] storage ref"
+                            }
+                          },
+                          "id": 64405,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "length",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "971:13:108",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "-",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 64406,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "985:1:108",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        "src": "971:15:108",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "964:23:108",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_round_$64306_storage",
+                        "typeString": "struct dummyAggregator.round storage ref"
+                      }
+                    },
+                    "id": 64409,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "answer",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 64303,
+                    "src": "964:30:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 64402,
+                  "id": 64410,
+                  "nodeType": "Return",
+                  "src": "957:37:108"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "50d25bcd",
+            "id": 64412,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "latestAnswer",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 64399,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "931:8:108"
+            },
+            "parameters": {
+              "id": 64398,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "914:2:108"
+            },
+            "returnParameters": {
+              "id": 64402,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64401,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 64412,
+                  "src": "948:3:108",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 64400,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "948:3:108",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "947:5:108"
+            },
+            "scope": 64413,
+            "src": "893:105:108",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 64414,
+        "src": "115:887:108"
+      }
+    ],
+    "src": "32:971:108"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/asher/FixFinanceV1/contracts/oracle/dummy/dummyAggregator.sol",
+      "exportedSymbols": {
+        "dummyAggregator": [
+          64413
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".8",
+            "<",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 64298,
+        "name": "PragmaDirective",
+        "src": "32:31:108"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 64451,
+          "absolutePath": "/home/asher/FixFinanceV1/contracts/oracle/interfaces/IChainlinkAggregator.sol",
+          "file": "../interfaces/IChainlinkAggregator.sol",
+          "scope": 64414,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 64299,
+        "name": "ImportDirective",
+        "src": "65:48:108"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            64450
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            64413,
+            64450
+          ],
+          "name": "dummyAggregator",
+          "scope": 64414
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IChainlinkAggregator",
+                  "referencedDeclaration": 64450,
+                  "type": "contract IChainlinkAggregator"
+                },
+                "id": 64300,
+                "name": "UserDefinedTypeName",
+                "src": "143:20:108"
+              }
+            ],
+            "id": 64301,
+            "name": "InheritanceSpecifier",
+            "src": "143:20:108"
+          },
+          {
+            "attributes": {
+              "canonicalName": "dummyAggregator.round",
+              "name": "round",
+              "scope": 64413,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "answer",
+                  "overrides": null,
+                  "scope": 64306,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "int256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "int",
+                      "type": "int256"
+                    },
+                    "id": 64302,
+                    "name": "ElementaryTypeName",
+                    "src": "185:3:108"
+                  }
+                ],
+                "id": 64303,
+                "name": "VariableDeclaration",
+                "src": "185:10:108"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "timestamp",
+                  "overrides": null,
+                  "scope": 64306,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 64304,
+                    "name": "ElementaryTypeName",
+                    "src": "199:4:108"
+                  }
+                ],
+                "id": 64305,
+                "name": "VariableDeclaration",
+                "src": "199:14:108"
+              }
+            ],
+            "id": 64306,
+            "name": "StructDefinition",
+            "src": "168:49:108"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                64425
+              ],
+              "constant": false,
+              "functionSelector": "313ce567",
+              "mutability": "mutable",
+              "name": "decimals",
+              "scope": 64413,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint8",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint8",
+                  "type": "uint8"
+                },
+                "id": 64307,
+                "name": "ElementaryTypeName",
+                "src": "220:5:108"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 64308,
+                "name": "OverrideSpecifier",
+                "src": "233:8:108"
+              }
+            ],
+            "id": 64309,
+            "name": "VariableDeclaration",
+            "src": "220:30:108"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "rounds",
+              "overrides": null,
+              "scope": 64413,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct dummyAggregator.round[]",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct dummyAggregator.round[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "round",
+                      "referencedDeclaration": 64306,
+                      "type": "struct dummyAggregator.round"
+                    },
+                    "id": 64310,
+                    "name": "UserDefinedTypeName",
+                    "src": "253:5:108"
+                  }
+                ],
+                "id": 64311,
+                "name": "ArrayTypeName",
+                "src": "253:7:108"
+              }
+            ],
+            "id": 64312,
+            "name": "VariableDeclaration",
+            "src": "253:14:108"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                64420
+              ],
+              "constant": false,
+              "functionSelector": "7284e416",
+              "mutability": "mutable",
+              "name": "description",
+              "scope": 64413,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 64313,
+                "name": "ElementaryTypeName",
+                "src": "271:6:108"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 64314,
+                "name": "OverrideSpecifier",
+                "src": "285:8:108"
+              }
+            ],
+            "id": 64315,
+            "name": "VariableDeclaration",
+            "src": "271:34:108"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 64413,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_decimals",
+                      "overrides": null,
+                      "scope": 64341,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 64316,
+                        "name": "ElementaryTypeName",
+                        "src": "321:5:108"
+                      }
+                    ],
+                    "id": 64317,
+                    "name": "VariableDeclaration",
+                    "src": "321:15:108"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_description",
+                      "overrides": null,
+                      "scope": 64341,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 64318,
+                        "name": "ElementaryTypeName",
+                        "src": "338:6:108"
+                      }
+                    ],
+                    "id": 64319,
+                    "name": "VariableDeclaration",
+                    "src": "338:26:108"
+                  }
+                ],
+                "id": 64320,
+                "name": "ParameterList",
+                "src": "320:45:108"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 64321,
+                "name": "ParameterList",
+                "src": "373:0:108"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint8"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 64309,
+                              "type": "uint8",
+                              "value": "decimals"
+                            },
+                            "id": 64322,
+                            "name": "Identifier",
+                            "src": "377:8:108"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 64317,
+                              "type": "uint8",
+                              "value": "_decimals"
+                            },
+                            "id": 64323,
+                            "name": "Identifier",
+                            "src": "388:9:108"
+                          }
+                        ],
+                        "id": 64324,
+                        "name": "Assignment",
+                        "src": "377:20:108"
+                      }
+                    ],
+                    "id": 64325,
+                    "name": "ExpressionStatement",
+                    "src": "377:20:108"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 64315,
+                              "type": "string storage ref",
+                              "value": "description"
+                            },
+                            "id": 64326,
+                            "name": "Identifier",
+                            "src": "401:11:108"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 64319,
+                              "type": "string memory",
+                              "value": "_description"
+                            },
+                            "id": 64327,
+                            "name": "Identifier",
+                            "src": "415:12:108"
+                          }
+                        ],
+                        "id": 64328,
+                        "name": "Assignment",
+                        "src": "401:26:108"
+                      }
+                    ],
+                    "id": 64329,
+                    "name": "ExpressionStatement",
+                    "src": "401:26:108"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_round_$64306_memory_ptr",
+                                  "typeString": "struct dummyAggregator.round memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct dummyAggregator.round storage ref)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64312,
+                                  "type": "struct dummyAggregator.round storage ref[] storage ref",
+                                  "value": "rounds"
+                                },
+                                "id": 64330,
+                                "name": "Identifier",
+                                "src": "431:6:108"
+                              }
+                            ],
+                            "id": 64332,
+                            "name": "MemberAccess",
+                            "src": "431:11:108"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct dummyAggregator.round memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64306,
+                                  "type": "type(struct dummyAggregator.round storage pointer)",
+                                  "value": "round"
+                                },
+                                "id": 64333,
+                                "name": "Identifier",
+                                "src": "443:5:108"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 64334,
+                                "name": "Literal",
+                                "src": "449:1:108"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "timestamp",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": -4,
+                                      "type": "block",
+                                      "value": "block"
+                                    },
+                                    "id": 64335,
+                                    "name": "Identifier",
+                                    "src": "452:5:108"
+                                  }
+                                ],
+                                "id": 64336,
+                                "name": "MemberAccess",
+                                "src": "452:15:108"
+                              }
+                            ],
+                            "id": 64337,
+                            "name": "FunctionCall",
+                            "src": "443:25:108"
+                          }
+                        ],
+                        "id": 64338,
+                        "name": "FunctionCall",
+                        "src": "431:38:108"
+                      }
+                    ],
+                    "id": 64339,
+                    "name": "ExpressionStatement",
+                    "src": "431:38:108"
+                  }
+                ],
+                "id": 64340,
+                "name": "Block",
+                "src": "373:100:108"
+              }
+            ],
+            "id": 64341,
+            "name": "FunctionDefinition",
+            "src": "309:164:108"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "51f15c4f",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addRound",
+              "overrides": null,
+              "scope": 64413,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_answer",
+                      "overrides": null,
+                      "scope": 64357,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 64342,
+                        "name": "ElementaryTypeName",
+                        "src": "494:3:108"
+                      }
+                    ],
+                    "id": 64343,
+                    "name": "VariableDeclaration",
+                    "src": "494:11:108"
+                  }
+                ],
+                "id": 64344,
+                "name": "ParameterList",
+                "src": "493:13:108"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 64345,
+                "name": "ParameterList",
+                "src": "516:0:108"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_round_$64306_memory_ptr",
+                                  "typeString": "struct dummyAggregator.round memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct dummyAggregator.round storage ref)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64312,
+                                  "type": "struct dummyAggregator.round storage ref[] storage ref",
+                                  "value": "rounds"
+                                },
+                                "id": 64346,
+                                "name": "Identifier",
+                                "src": "520:6:108"
+                              }
+                            ],
+                            "id": 64348,
+                            "name": "MemberAccess",
+                            "src": "520:11:108"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct dummyAggregator.round memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_int256",
+                                      "typeString": "int256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64306,
+                                  "type": "type(struct dummyAggregator.round storage pointer)",
+                                  "value": "round"
+                                },
+                                "id": 64349,
+                                "name": "Identifier",
+                                "src": "532:5:108"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64343,
+                                  "type": "int256",
+                                  "value": "_answer"
+                                },
+                                "id": 64350,
+                                "name": "Identifier",
+                                "src": "538:7:108"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "timestamp",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": -4,
+                                      "type": "block",
+                                      "value": "block"
+                                    },
+                                    "id": 64351,
+                                    "name": "Identifier",
+                                    "src": "547:5:108"
+                                  }
+                                ],
+                                "id": 64352,
+                                "name": "MemberAccess",
+                                "src": "547:15:108"
+                              }
+                            ],
+                            "id": 64353,
+                            "name": "FunctionCall",
+                            "src": "532:31:108"
+                          }
+                        ],
+                        "id": 64354,
+                        "name": "FunctionCall",
+                        "src": "520:44:108"
+                      }
+                    ],
+                    "id": 64355,
+                    "name": "ExpressionStatement",
+                    "src": "520:44:108"
+                  }
+                ],
+                "id": 64356,
+                "name": "Block",
+                "src": "516:52:108"
+              }
+            ],
+            "id": 64357,
+            "name": "FunctionDefinition",
+            "src": "476:92:108"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                64449
+              ],
+              "documentation": null,
+              "functionSelector": "b633620c",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getTimestamp",
+              "scope": 64413,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 64361,
+                "name": "OverrideSpecifier",
+                "src": "622:8:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_roundId",
+                      "overrides": null,
+                      "scope": 64371,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 64358,
+                        "name": "ElementaryTypeName",
+                        "src": "593:4:108"
+                      }
+                    ],
+                    "id": 64359,
+                    "name": "VariableDeclaration",
+                    "src": "593:13:108"
+                  }
+                ],
+                "id": 64360,
+                "name": "ParameterList",
+                "src": "592:15:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 64371,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 64362,
+                        "name": "ElementaryTypeName",
+                        "src": "639:4:108"
+                      }
+                    ],
+                    "id": 64363,
+                    "name": "VariableDeclaration",
+                    "src": "639:4:108"
+                  }
+                ],
+                "id": 64364,
+                "name": "ParameterList",
+                "src": "638:6:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 64364
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "timestamp",
+                          "referencedDeclaration": 64305,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct dummyAggregator.round storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64312,
+                                  "type": "struct dummyAggregator.round storage ref[] storage ref",
+                                  "value": "rounds"
+                                },
+                                "id": 64365,
+                                "name": "Identifier",
+                                "src": "656:6:108"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64359,
+                                  "type": "uint256",
+                                  "value": "_roundId"
+                                },
+                                "id": 64366,
+                                "name": "Identifier",
+                                "src": "663:8:108"
+                              }
+                            ],
+                            "id": 64367,
+                            "name": "IndexAccess",
+                            "src": "656:16:108"
+                          }
+                        ],
+                        "id": 64368,
+                        "name": "MemberAccess",
+                        "src": "656:26:108"
+                      }
+                    ],
+                    "id": 64369,
+                    "name": "Return",
+                    "src": "649:33:108"
+                  }
+                ],
+                "id": 64370,
+                "name": "Block",
+                "src": "645:41:108"
+              }
+            ],
+            "id": 64371,
+            "name": "FunctionDefinition",
+            "src": "571:115:108"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                64442
+              ],
+              "documentation": null,
+              "functionSelector": "b5ab58dc",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getAnswer",
+              "scope": 64413,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 64375,
+                "name": "OverrideSpecifier",
+                "src": "737:8:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_roundId",
+                      "overrides": null,
+                      "scope": 64385,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 64372,
+                        "name": "ElementaryTypeName",
+                        "src": "708:4:108"
+                      }
+                    ],
+                    "id": 64373,
+                    "name": "VariableDeclaration",
+                    "src": "708:13:108"
+                  }
+                ],
+                "id": 64374,
+                "name": "ParameterList",
+                "src": "707:15:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 64385,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 64376,
+                        "name": "ElementaryTypeName",
+                        "src": "754:3:108"
+                      }
+                    ],
+                    "id": 64377,
+                    "name": "VariableDeclaration",
+                    "src": "754:3:108"
+                  }
+                ],
+                "id": 64378,
+                "name": "ParameterList",
+                "src": "753:5:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 64378
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "answer",
+                          "referencedDeclaration": 64303,
+                          "type": "int256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct dummyAggregator.round storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64312,
+                                  "type": "struct dummyAggregator.round storage ref[] storage ref",
+                                  "value": "rounds"
+                                },
+                                "id": 64379,
+                                "name": "Identifier",
+                                "src": "770:6:108"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64373,
+                                  "type": "uint256",
+                                  "value": "_roundId"
+                                },
+                                "id": 64380,
+                                "name": "Identifier",
+                                "src": "777:8:108"
+                              }
+                            ],
+                            "id": 64381,
+                            "name": "IndexAccess",
+                            "src": "770:16:108"
+                          }
+                        ],
+                        "id": 64382,
+                        "name": "MemberAccess",
+                        "src": "770:23:108"
+                      }
+                    ],
+                    "id": 64383,
+                    "name": "Return",
+                    "src": "763:30:108"
+                  }
+                ],
+                "id": 64384,
+                "name": "Block",
+                "src": "759:38:108"
+              }
+            ],
+            "id": 64385,
+            "name": "FunctionDefinition",
+            "src": "689:108:108"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                64435
+              ],
+              "documentation": null,
+              "functionSelector": "668a0f02",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "latestRound",
+              "scope": 64413,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 64387,
+                "name": "OverrideSpecifier",
+                "src": "837:8:108"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 64386,
+                "name": "ParameterList",
+                "src": "820:2:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 64397,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 64388,
+                        "name": "ElementaryTypeName",
+                        "src": "854:4:108"
+                      }
+                    ],
+                    "id": 64389,
+                    "name": "VariableDeclaration",
+                    "src": "854:4:108"
+                  }
+                ],
+                "id": 64390,
+                "name": "ParameterList",
+                "src": "853:6:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 64390
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "-",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "length",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64312,
+                                  "type": "struct dummyAggregator.round storage ref[] storage ref",
+                                  "value": "rounds"
+                                },
+                                "id": 64391,
+                                "name": "Identifier",
+                                "src": "871:6:108"
+                              }
+                            ],
+                            "id": 64392,
+                            "name": "MemberAccess",
+                            "src": "871:13:108"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 64393,
+                            "name": "Literal",
+                            "src": "885:1:108"
+                          }
+                        ],
+                        "id": 64394,
+                        "name": "BinaryOperation",
+                        "src": "871:15:108"
+                      }
+                    ],
+                    "id": 64395,
+                    "name": "Return",
+                    "src": "864:22:108"
+                  }
+                ],
+                "id": 64396,
+                "name": "Block",
+                "src": "860:30:108"
+              }
+            ],
+            "id": 64397,
+            "name": "FunctionDefinition",
+            "src": "800:90:108"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                64430
+              ],
+              "documentation": null,
+              "functionSelector": "50d25bcd",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "latestAnswer",
+              "scope": 64413,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 64399,
+                "name": "OverrideSpecifier",
+                "src": "931:8:108"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 64398,
+                "name": "ParameterList",
+                "src": "914:2:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 64412,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 64400,
+                        "name": "ElementaryTypeName",
+                        "src": "948:3:108"
+                      }
+                    ],
+                    "id": 64401,
+                    "name": "VariableDeclaration",
+                    "src": "948:3:108"
+                  }
+                ],
+                "id": 64402,
+                "name": "ParameterList",
+                "src": "947:5:108"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 64402
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "answer",
+                          "referencedDeclaration": 64303,
+                          "type": "int256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct dummyAggregator.round storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64312,
+                                  "type": "struct dummyAggregator.round storage ref[] storage ref",
+                                  "value": "rounds"
+                                },
+                                "id": 64403,
+                                "name": "Identifier",
+                                "src": "964:6:108"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "-",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "length",
+                                      "referencedDeclaration": null,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 64312,
+                                          "type": "struct dummyAggregator.round storage ref[] storage ref",
+                                          "value": "rounds"
+                                        },
+                                        "id": 64404,
+                                        "name": "Identifier",
+                                        "src": "971:6:108"
+                                      }
+                                    ],
+                                    "id": 64405,
+                                    "name": "MemberAccess",
+                                    "src": "971:13:108"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "31",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 1",
+                                      "value": "1"
+                                    },
+                                    "id": 64406,
+                                    "name": "Literal",
+                                    "src": "985:1:108"
+                                  }
+                                ],
+                                "id": 64407,
+                                "name": "BinaryOperation",
+                                "src": "971:15:108"
+                              }
+                            ],
+                            "id": 64408,
+                            "name": "IndexAccess",
+                            "src": "964:23:108"
+                          }
+                        ],
+                        "id": 64409,
+                        "name": "MemberAccess",
+                        "src": "964:30:108"
+                      }
+                    ],
+                    "id": 64410,
+                    "name": "Return",
+                    "src": "957:37:108"
+                  }
+                ],
+                "id": 64411,
+                "name": "Block",
+                "src": "953:45:108"
+              }
+            ],
+            "id": 64412,
+            "name": "FunctionDefinition",
+            "src": "893:105:108"
+          }
+        ],
+        "id": 64413,
+        "name": "ContractDefinition",
+        "src": "115:887:108"
+      }
+    ],
+    "id": 64414,
+    "name": "SourceUnit",
+    "src": "32:971:108"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.8+commit.0bbfe453.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-11-26T19:15:56.117Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

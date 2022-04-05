@@ -1,0 +1,635 @@
+{
+  "contractName": "IFCPFlashBorrower",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "initiator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountYield",
+          "type": "uint256"
+        },
+        {
+          "internalType": "int256",
+          "name": "amountBond",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feeYield",
+          "type": "uint256"
+        },
+        {
+          "internalType": "int256",
+          "name": "feeBond",
+          "type": "int256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onFlashLoan",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"initiator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountYield\",\"type\":\"uint256\"},{\"internalType\":\"int256\",\"name\":\"amountBond\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"feeYield\",\"type\":\"uint256\"},{\"internalType\":\"int256\",\"name\":\"feeBond\",\"type\":\"int256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"onFlashLoan\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/asher/FixFinanceV1/contracts/interfaces/IFCPFlashBorrower.sol\":\"IFCPFlashBorrower\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/asher/FixFinanceV1/contracts/interfaces/IFCPFlashBorrower.sol\":{\"keccak256\":\"0xa661622410e55e8942abc8ed6fbe7b8a11013996a6472c6dc35bc49b99531467\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a46c9dc45f9cd01a6864f77a39ca2c564fe3d887c8ef2b701ace5272d453259\",\"dweb:/ipfs/QmSLRXxPRH1GoQWHXq7sJYJA9gx2uZnhTbnYgM6d8gJCUU\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.8 <0.7.0;\n\ninterface IFCPFlashBorrower {\n    function onFlashLoan(\n        address initiator,\n        uint256 amountYield,\n        int256 amountBond,\n        uint256 feeYield,\n        int256 feeBond,\n        bytes calldata data\n    ) external returns (bytes32);\n}",
+  "sourcePath": "/home/asher/FixFinanceV1/contracts/interfaces/IFCPFlashBorrower.sol",
+  "ast": {
+    "absolutePath": "/home/asher/FixFinanceV1/contracts/interfaces/IFCPFlashBorrower.sol",
+    "exportedSymbols": {
+      "IFCPFlashBorrower": [
+        56665
+      ]
+    },
+    "id": 56666,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 56647,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".8",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:80"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 56665,
+        "linearizedBaseContracts": [
+          56665
+        ],
+        "name": "IFCPFlashBorrower",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "3526f5b1",
+            "id": 56664,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onFlashLoan",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 56660,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 56649,
+                  "mutability": "mutable",
+                  "name": "initiator",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56664,
+                  "src": "129:17:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 56648,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "129:7:80",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 56651,
+                  "mutability": "mutable",
+                  "name": "amountYield",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56664,
+                  "src": "156:19:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 56650,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "156:7:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 56653,
+                  "mutability": "mutable",
+                  "name": "amountBond",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56664,
+                  "src": "185:17:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 56652,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "185:6:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 56655,
+                  "mutability": "mutable",
+                  "name": "feeYield",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56664,
+                  "src": "212:16:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 56654,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:7:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 56657,
+                  "mutability": "mutable",
+                  "name": "feeBond",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56664,
+                  "src": "238:14:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 56656,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "238:6:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 56659,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56664,
+                  "src": "262:19:80",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 56658,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "262:5:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "119:168:80"
+            },
+            "returnParameters": {
+              "id": 56663,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 56662,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56664,
+                  "src": "306:7:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 56661,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "306:7:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "305:9:80"
+            },
+            "scope": 56665,
+            "src": "99:216:80",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 56666,
+        "src": "65:252:80"
+      }
+    ],
+    "src": "32:285:80"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/asher/FixFinanceV1/contracts/interfaces/IFCPFlashBorrower.sol",
+      "exportedSymbols": {
+        "IFCPFlashBorrower": [
+          56665
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".8",
+            "<",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 56647,
+        "name": "PragmaDirective",
+        "src": "32:31:80"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            56665
+          ],
+          "name": "IFCPFlashBorrower",
+          "scope": 56666
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "3526f5b1",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "onFlashLoan",
+              "overrides": null,
+              "scope": 56665,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "initiator",
+                      "overrides": null,
+                      "scope": 56664,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 56648,
+                        "name": "ElementaryTypeName",
+                        "src": "129:7:80"
+                      }
+                    ],
+                    "id": 56649,
+                    "name": "VariableDeclaration",
+                    "src": "129:17:80"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amountYield",
+                      "overrides": null,
+                      "scope": 56664,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 56650,
+                        "name": "ElementaryTypeName",
+                        "src": "156:7:80"
+                      }
+                    ],
+                    "id": 56651,
+                    "name": "VariableDeclaration",
+                    "src": "156:19:80"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amountBond",
+                      "overrides": null,
+                      "scope": 56664,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int256",
+                          "type": "int256"
+                        },
+                        "id": 56652,
+                        "name": "ElementaryTypeName",
+                        "src": "185:6:80"
+                      }
+                    ],
+                    "id": 56653,
+                    "name": "VariableDeclaration",
+                    "src": "185:17:80"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "feeYield",
+                      "overrides": null,
+                      "scope": 56664,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 56654,
+                        "name": "ElementaryTypeName",
+                        "src": "212:7:80"
+                      }
+                    ],
+                    "id": 56655,
+                    "name": "VariableDeclaration",
+                    "src": "212:16:80"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "feeBond",
+                      "overrides": null,
+                      "scope": 56664,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int256",
+                          "type": "int256"
+                        },
+                        "id": 56656,
+                        "name": "ElementaryTypeName",
+                        "src": "238:6:80"
+                      }
+                    ],
+                    "id": 56657,
+                    "name": "VariableDeclaration",
+                    "src": "238:14:80"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "overrides": null,
+                      "scope": 56664,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 56658,
+                        "name": "ElementaryTypeName",
+                        "src": "262:5:80"
+                      }
+                    ],
+                    "id": 56659,
+                    "name": "VariableDeclaration",
+                    "src": "262:19:80"
+                  }
+                ],
+                "id": 56660,
+                "name": "ParameterList",
+                "src": "119:168:80"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 56664,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 56661,
+                        "name": "ElementaryTypeName",
+                        "src": "306:7:80"
+                      }
+                    ],
+                    "id": 56662,
+                    "name": "VariableDeclaration",
+                    "src": "306:7:80"
+                  }
+                ],
+                "id": 56663,
+                "name": "ParameterList",
+                "src": "305:9:80"
+              }
+            ],
+            "id": 56664,
+            "name": "FunctionDefinition",
+            "src": "99:216:80"
+          }
+        ],
+        "id": 56665,
+        "name": "ContractDefinition",
+        "src": "65:252:80"
+      }
+    ],
+    "id": 56666,
+    "name": "SourceUnit",
+    "src": "32:285:80"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.8+commit.0bbfe453.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-11-26T19:15:56.040Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

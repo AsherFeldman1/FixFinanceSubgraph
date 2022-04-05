@@ -1,0 +1,353 @@
+{
+  "contractName": "IDividend",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "claimDividend",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "contractClaimDividend",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"}],\"name\":\"claimDividend\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"contractClaimDividend\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/asher/FixFinanceV1/contracts/interfaces/IDividend.sol\":\"IDividend\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/asher/FixFinanceV1/contracts/interfaces/IDividend.sol\":{\"keccak256\":\"0xd955f49a1b4831b865c72ec1c6709b17f094aa7729873fb2c85180731026eecb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://12aecc792ce0b0305b5e21ece3565f6e8b607600378ddaca167a001795018368\",\"dweb:/ipfs/QmWJkH2cip25wpgnfeBQ2bgjbWR1Sn5kCQfr12LoMwc7vm\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.8 <0.7.0;\n\ninterface  IDividend {\n\t/*\n\t\t@Description: allows users to claim their share of the total dividends of the contract based on their portion of totalYield compared to the total supply\n\t*/\n\tfunction claimDividend(address _to) external;\n\tfunction contractClaimDividend() external;\n}",
+  "sourcePath": "/home/asher/FixFinanceV1/contracts/interfaces/IDividend.sol",
+  "ast": {
+    "absolutePath": "/home/asher/FixFinanceV1/contracts/interfaces/IDividend.sol",
+    "exportedSymbols": {
+      "IDividend": [
+        56506
+      ]
+    },
+    "id": 56507,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 56497,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".8",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:76"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 56506,
+        "linearizedBaseContracts": [
+          56506
+        ],
+        "name": "IDividend",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "15f7e05e",
+            "id": 56502,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimDividend",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 56500,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 56499,
+                  "mutability": "mutable",
+                  "name": "_to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56502,
+                  "src": "275:11:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 56498,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "275:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "274:13:76"
+            },
+            "returnParameters": {
+              "id": 56501,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "296:0:76"
+            },
+            "scope": 56506,
+            "src": "252:45:76",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "903fe3dd",
+            "id": 56505,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "contractClaimDividend",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 56503,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "329:2:76"
+            },
+            "returnParameters": {
+              "id": 56504,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "340:0:76"
+            },
+            "scope": 56506,
+            "src": "299:42:76",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 56507,
+        "src": "65:278:76"
+      }
+    ],
+    "src": "32:311:76"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/asher/FixFinanceV1/contracts/interfaces/IDividend.sol",
+      "exportedSymbols": {
+        "IDividend": [
+          56506
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".8",
+            "<",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 56497,
+        "name": "PragmaDirective",
+        "src": "32:31:76"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            56506
+          ],
+          "name": "IDividend",
+          "scope": 56507
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "15f7e05e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "claimDividend",
+              "overrides": null,
+              "scope": 56506,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_to",
+                      "overrides": null,
+                      "scope": 56502,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 56498,
+                        "name": "ElementaryTypeName",
+                        "src": "275:7:76"
+                      }
+                    ],
+                    "id": 56499,
+                    "name": "VariableDeclaration",
+                    "src": "275:11:76"
+                  }
+                ],
+                "id": 56500,
+                "name": "ParameterList",
+                "src": "274:13:76"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 56501,
+                "name": "ParameterList",
+                "src": "296:0:76"
+              }
+            ],
+            "id": 56502,
+            "name": "FunctionDefinition",
+            "src": "252:45:76"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "903fe3dd",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "contractClaimDividend",
+              "overrides": null,
+              "scope": 56506,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 56503,
+                "name": "ParameterList",
+                "src": "329:2:76"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 56504,
+                "name": "ParameterList",
+                "src": "340:0:76"
+              }
+            ],
+            "id": 56505,
+            "name": "FunctionDefinition",
+            "src": "299:42:76"
+          }
+        ],
+        "id": 56506,
+        "name": "ContractDefinition",
+        "src": "65:278:76"
+      }
+    ],
+    "id": 56507,
+    "name": "SourceUnit",
+    "src": "32:311:76"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.8+commit.0bbfe453.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-11-26T19:15:56.038Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

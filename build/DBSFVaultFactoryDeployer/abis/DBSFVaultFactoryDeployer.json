@@ -1,0 +1,70 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_infoOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_delegate1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_delegate2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_delegate3",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_delegate4",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_delegate5",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "Deploy",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultHealthAddress",
+        "type": "address"
+      }
+    ],
+    "name": "deploy",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

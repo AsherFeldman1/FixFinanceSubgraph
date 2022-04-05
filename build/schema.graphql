@@ -1,0 +1,146 @@
+enum VaultType {
+	DBSF
+	NSF
+	SBNSF
+}
+
+enum CollateralType {
+	ERC20
+	ZCB
+	Wrapper
+}
+
+type WrapperAsset @entity {
+	id: ID!
+	Supply: BigInt!
+	UnderlyingAsset: String!
+	Owner: User!
+	WrapperType: BigInt!
+}
+
+type FCP @entity {
+	id: ID!
+	Wrapper: WrapperAsset!
+	Owner: User!
+	Maturity: BigInt!
+}
+
+type Orderbook @entity {
+	id: ID!
+	Pool: FCP!
+	Owner: User!
+	LockedZCB: BigInt!
+	LockedYT: BigInt!
+	AvailableZCBsells: BigInt!
+	AvailableYTsells: BigInt!
+	YTsellHead: YTsell!
+	ZCBsellHead: ZCBsell!
+	YTsells: [YTsell!]! @derivedFrom(field: "orderbook")
+	ZCBsells: [ZCBsell!]! @derivedFrom(field: "orderbook")
+}
+
+type User @entity {
+	id: ID!
+	WrapperHoldings: [WrapperHolding!]! @derivedFrom(field: "Holder")
+	FCPholdings: [FCPholding!]! @derivedFrom(field: "Holder")
+	Vaults: [Vault!]! @derivedFrom(field: "Owner")
+	WrappersCreated: [WrapperAsset!]! @derivedFrom(field: "Owner")
+	FCPsCreated: [FCP!]! @derivedFrom(field: "Owner")
+	OrderbooksCreated: [Orderbook!]!@derivedFrom(field: "Owner")
+}
+
+type WrapperHolding @entity {
+	id: ID!
+	Asset: WrapperAsset!
+	Holder: User!
+	WrappedAmount: BigInt!
+}
+
+type FCPholding @entity {
+	id: ID!
+	Holder: User!
+	BondAmount: BigInt!
+	YieldAmount: BigInt!
+	OrderBookPosition: OrderbookPosition!
+	Pool: FCP!
+}
+
+type OrderbookPosition @entity {
+	id: ID!
+	Orderbook: Orderbook!
+	User: User!
+	DepositedBondAmount: BigInt!
+	DepositedYieldAmount: BigInt!
+	LockedZCB: BigInt!
+	LockedYT: BigInt!
+	ZCBsells: [ZCBsell!]! @derivedFrom(field: "Position")
+	YTsells: [YTsell!]! @derivedFrom(field: "Position")
+}
+
+type YTVault @entity {
+	id: ID!
+	Owner: User!
+	Type: VaultType!
+	Collateral: YTVaultCollateral!
+	Debt: YTVaultDebt!
+	StabilityFeeAPR: BigInt!
+	AmountSFee: BigInt!
+}
+
+type YTVaultCollateral @entity {
+	id: ID!
+	Pool: FCP!
+	BondSupplied: BigInt!
+	YieldSupplied: BigInt!
+}
+
+type YTVaultDebt @entity {
+	id: ID!
+	Pool: FCP!
+	ZCBBorrowed: BigInt!
+}
+
+type Vault @entity {
+	id: ID!
+	Owner: User!
+	Type: VaultType!
+	Collateral: VaultCollateral!
+	Debt: VaultDebt!
+	StabilityFeeAPR: BigInt!
+	AmountSFee: BigInt!
+}
+
+type VaultCollateral @entity {
+	id: ID!
+	AssetType: CollateralType!
+	Asset: String!
+	Amount: BigInt!
+}
+
+type VaultDebt @entity {
+	id: ID!
+	Asset: String!
+	Amount: BigInt!
+}
+
+type ZCBsell @entity {
+	id: ID!
+	PreviousOrder: ZCBsell!
+	NextOrder: ZCBsell!
+	Maker: User!
+	Position: OrderbookPosition!
+	Amount: BigInt!
+	MaturityConversionRate: BigInt!
+	orderbook: Orderbook!
+}
+
+type YTsell @entity {
+	id: ID!
+	PreviousOrder: YTsell!
+	NextOrder: YTsell!
+	Maker: User!
+	Position: OrderbookPosition!
+	Amount: BigInt!
+	MaturityConversionRate: BigInt!
+	orderbook: Orderbook!
+}

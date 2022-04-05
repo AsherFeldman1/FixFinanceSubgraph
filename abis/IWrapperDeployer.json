@@ -1,0 +1,538 @@
+{
+  "contractName": "IWrapperDeployer",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_underlyingAssetAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "deploy",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "wrapperAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "InfoOracleAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"InfoOracleAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_underlyingAssetAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"deploy\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"wrapperAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/asher/FixFinanceV1/contracts/interfaces/IWrapperDeployer.sol\":\"IWrapperDeployer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/asher/FixFinanceV1/contracts/interfaces/IWrapperDeployer.sol\":{\"keccak256\":\"0x80cd6b1859a6762ab5338715a64b3c6b4b0c0650f3fb8a3e44d14b31d8c99e46\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://09dd567426841385699e050ededf4ffc767df050c2dd1d3e506ab0428d9daf15\",\"dweb:/ipfs/QmcdW3kXE2sTGPiVL2uzCMdNnuzFMwJAvtRhqRvNbndjxF\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.8 <0.7.0;\n\ninterface IWrapperDeployer {\n\tfunction deploy(address _underlyingAssetAddress, address _owner) external returns(address wrapperAddress);\n\tfunction InfoOracleAddress() external view returns(address);\n}",
+  "sourcePath": "/home/asher/FixFinanceV1/contracts/interfaces/IWrapperDeployer.sol",
+  "ast": {
+    "absolutePath": "/home/asher/FixFinanceV1/contracts/interfaces/IWrapperDeployer.sol",
+    "exportedSymbols": {
+      "IWrapperDeployer": [
+        59515
+      ]
+    },
+    "id": 59516,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 59500,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".8",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:94"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 59515,
+        "linearizedBaseContracts": [
+          59515
+        ],
+        "name": "IWrapperDeployer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "545e7c61",
+            "id": 59509,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 59505,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 59502,
+                  "mutability": "mutable",
+                  "name": "_underlyingAssetAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 59509,
+                  "src": "111:31:94",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 59501,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "111:7:94",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 59504,
+                  "mutability": "mutable",
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 59509,
+                  "src": "144:14:94",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 59503,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "144:7:94",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "110:49:94"
+            },
+            "returnParameters": {
+              "id": 59508,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 59507,
+                  "mutability": "mutable",
+                  "name": "wrapperAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 59509,
+                  "src": "177:22:94",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 59506,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "177:7:94",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "176:24:94"
+            },
+            "scope": 59515,
+            "src": "95:106:94",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "521f8d9a",
+            "id": 59514,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "InfoOracleAddress",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 59510,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "229:2:94"
+            },
+            "returnParameters": {
+              "id": 59513,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 59512,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 59514,
+                  "src": "254:7:94",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 59511,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "254:7:94",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "253:9:94"
+            },
+            "scope": 59515,
+            "src": "203:60:94",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 59516,
+        "src": "65:200:94"
+      }
+    ],
+    "src": "32:233:94"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/asher/FixFinanceV1/contracts/interfaces/IWrapperDeployer.sol",
+      "exportedSymbols": {
+        "IWrapperDeployer": [
+          59515
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".8",
+            "<",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 59500,
+        "name": "PragmaDirective",
+        "src": "32:31:94"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            59515
+          ],
+          "name": "IWrapperDeployer",
+          "scope": 59516
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "545e7c61",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "deploy",
+              "overrides": null,
+              "scope": 59515,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_underlyingAssetAddress",
+                      "overrides": null,
+                      "scope": 59509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 59501,
+                        "name": "ElementaryTypeName",
+                        "src": "111:7:94"
+                      }
+                    ],
+                    "id": 59502,
+                    "name": "VariableDeclaration",
+                    "src": "111:31:94"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_owner",
+                      "overrides": null,
+                      "scope": 59509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 59503,
+                        "name": "ElementaryTypeName",
+                        "src": "144:7:94"
+                      }
+                    ],
+                    "id": 59504,
+                    "name": "VariableDeclaration",
+                    "src": "144:14:94"
+                  }
+                ],
+                "id": 59505,
+                "name": "ParameterList",
+                "src": "110:49:94"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "wrapperAddress",
+                      "overrides": null,
+                      "scope": 59509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 59506,
+                        "name": "ElementaryTypeName",
+                        "src": "177:7:94"
+                      }
+                    ],
+                    "id": 59507,
+                    "name": "VariableDeclaration",
+                    "src": "177:22:94"
+                  }
+                ],
+                "id": 59508,
+                "name": "ParameterList",
+                "src": "176:24:94"
+              }
+            ],
+            "id": 59509,
+            "name": "FunctionDefinition",
+            "src": "95:106:94"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "521f8d9a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "InfoOracleAddress",
+              "overrides": null,
+              "scope": 59515,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 59510,
+                "name": "ParameterList",
+                "src": "229:2:94"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 59514,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 59511,
+                        "name": "ElementaryTypeName",
+                        "src": "254:7:94"
+                      }
+                    ],
+                    "id": 59512,
+                    "name": "VariableDeclaration",
+                    "src": "254:7:94"
+                  }
+                ],
+                "id": 59513,
+                "name": "ParameterList",
+                "src": "253:9:94"
+              }
+            ],
+            "id": 59514,
+            "name": "FunctionDefinition",
+            "src": "203:60:94"
+          }
+        ],
+        "id": 59515,
+        "name": "ContractDefinition",
+        "src": "65:200:94"
+      }
+    ],
+    "id": 59516,
+    "name": "SourceUnit",
+    "src": "32:233:94"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.8+commit.0bbfe453.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-11-26T19:15:56.066Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

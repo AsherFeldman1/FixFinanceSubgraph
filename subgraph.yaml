@@ -1,0 +1,352 @@
+specVersion: 0.0.2
+description: Subgraph for fix finance
+repository: https://github.com/AsherFeldmann/FixFinanceSubgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Organizer
+    network: mainnet
+    source:
+      address: '0x0000000000000000000000000000000000000002'
+      abi: Organizer
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - WrapperHolder
+        - WrapperAsset
+      abis:
+        - name: Organizer
+          file: ./abis/Organizer.json
+        - name: IInfoOracle
+          file: ./abis/IInfoOracle.json
+      eventHandlers:
+        - event: WrapperDeployment(indexed address,indexed address,indexed address,uint256)
+          handler: handleWrapperDeployment
+        - event: FixCapitalPoolDeployment(indexed address,indexed address,indexed address,uint40)
+          handler: handleFCPdeployment
+        - event: OrderbookDeployment(indexed address,indexed address)
+          handler: handleOrderbookDeployment
+      file: ./src/Main/HandleDeployments.ts
+  - kind: ethereum/contract
+    name: DBSFVaultFactoryDeployer
+    network: mainnet
+    source:
+      address: '0x0000000000000000000000000000000000000002'
+      abi: DBSFVaultFactoryDeployer
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - User
+      abis:
+        - name: DBSFVaultFactoryDeployer
+          file: ./abis/DBSFVaultFactoryDeployer.json
+      eventHandlers:
+        - event: Deploy(address)
+          handler: handleDeployDBSF
+      file: ./src/Vaults/DBSFDeployerMappings.ts
+  - kind: ethereum/contract
+    name: NSFVaultFactoryDeployer
+    network: mainnet
+    source:
+      address: '0x0000000000000000000000000000000000000002'
+      abi: NSFVaultFactoryDeployer
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - User
+      abis:
+        - name: NSFVaultFactoryDeployer
+          file: ./abis/NSFVaultFactoryDeployer.json
+      eventHandlers:
+        - event: Deploy(address)
+          handler: handleDeployNSF
+      file: ./src/Vaults/NSFDeployerMappings.ts
+  - kind: ethereum/contract
+    name: SBNSFVaultFactoryDeployer
+    network: mainnet
+    source:
+      address: '0x0000000000000000000000000000000000000002'
+      abi: SBNSFVaultFactoryDeployer
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - User
+      abis:
+        - name: SBNSFVaultFactoryDeployer
+          file: ./abis/SBNSFVaultFactoryDeployer.json
+      eventHandlers:
+        - event: Deploy(address)
+          handler: handleDeploySBNSF
+      file: ./src/Vaults/SBNSFDeployerMappings.ts
+templates:
+  - kind: ethereum/contract
+    name: IWrapper
+    network: mainnet
+    source:
+      abi: IWrapper
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - WrapperAsset
+        - WrapperHolder
+        - User
+        - WrapperHolding
+      abis:
+        - name: IWrapper
+          file: ./abis/IWrapper.json
+      eventHandlers:
+        - event: Deposit(indexed address,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(indexed address,uint256)
+          handler: handleWithdrawal
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: FlashMint(indexed address,uint256)
+          handler: handleFlashMint
+        - event: FlashBurn(indexed address,uint256,uint256)
+          handler: handleFlashBurn
+      file: ./src/Main/WrapperMappings.ts
+  - kind: ethereum/contract
+    name: OrderbookExchange
+    network: mainnet
+    source:
+      abi: OrderbookExchange
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - FCPholding
+        - FCP
+        - WrapperHolder
+        - Orderbook
+        - OrderbookPosition
+        - ZCBsell
+        - YTsell
+      abis:
+        - name: OrderbookExchange
+          file: ./abis/OrderbookExchange.json
+      eventHandlers:
+        - event: MakeLimitSellZCB(indexed address,uint256,uint256,uint256,uint256)
+          handler: handleLimitSellZCB
+        - event: MakeLimitSellYT(indexed address,uint256,uint256,uint256,uint256)
+          handler: handleLimitSellYT
+        - event: ModifyOrder(uint256,int256)
+          handler: handleModification
+        - event: MarketBuyYT(indexed address,uint256,uint256)
+          handler: handleMarketBuyYT
+        - event: MarketBuyZCB(indexed address,uint256,uint256)
+          handler: handleMarketBuyZCB
+        - event: Deposit(indexed address,uint256,int256)
+          handler: handleOrderBookDeposit
+        - event: Withdrawal(indexed address,uint256,int256)
+          handler: handleOrderBookWithdrawal
+      file: ./src/Main/OrderbookMappings.ts
+  - kind: ethereum/contract
+    name: FixCapitalPool
+    network: mainnet
+    source:
+      abi: FixCapitalPool
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - FCP
+        - FCPholding
+        - WrapperHolding
+        - User
+      abis:
+        - name: FixCapitalPool
+          file: ./abis/FixCapitalPool.json
+      eventHandlers:
+        - event: BalanceUpdate(indexed address,uint256,int256)
+          handler: handleBalanceUpdated
+        - event: BondBalanceUpdate(indexed address,int256)
+          handler: handleBondBalanceUpdated
+        - event: ClaimPayout(indexed address)
+          handler: handlePayoutClaimed
+        - event: Deposit(indexed address,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(indexed address,uint256)
+          handler: handleWithdrawal
+      file: ./src/Main/FCPmappings.ts
+  - kind: ethereum/contract
+    name: DBSFVaultFactory
+    network: mainnet
+    source:
+      abi: DBSFVaultFactory
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - Vault
+        - VaultCollateral
+        - VaultDebt
+        - YTVault
+        - YTVaultCollateral
+        - YTVaultDebt
+      abis:
+        - name: DBSFVaultFactory
+          file: ./abis/DBSFVaultFactory.json
+      eventHandlers:
+        - event: OpenVault(indexed address,uint256)
+          handler: handleOpenVault
+        - event: CloseVault(indexed address,uint256)
+          handler: handleCloseVault
+        - event: AdjustVault(indexed address,uint256)
+          handler: handleAdjustVault
+        - event: AuctionLiquidation(indexed address,uint256,uint256)
+          handler: handleAuctionLiquidation
+        - event: BidOnLiquidation(uint256)
+          handler: handleBidOnLiquidation
+        - event: ClaimLiquidation(uint256)
+          handler: handleClaimLiquidation
+        - event: InstantLiquidation(indexed address,uint256)
+          handler: handleInstantLiquidation
+        - event: ClaimRebate(indexed address,address)
+          handler: handleClaimRebate
+        - event: OpenYTVault(indexed address,uint256)
+          handler: handleOpenYTVault
+        - event: CloseYTVault(indexed address,uint256)
+          handler: handleCloseYTVault
+        - event: AdjustYTVault(indexed address,uint256)
+          handler: handleAdjustYTVault
+        - event: AuctionYTLiquidation(indexed address,uint256,uint256)
+          handler: handleAuctionYTLiquidation
+        - event: InstantYTLiquidation(indexed address,uint256)
+          handler: handleInstantYTLiquidation
+        - event: BidOnYTLiquidation(uint256)
+          handler: handleBidOnYTLiquidation
+        - event: ClaimYTLiquidation(uint256)
+          handler: handleClaimYTLiquidation
+        - event: ClaimYTRebate(indexed address,address)
+          handler: handleClaimYTRebate
+        - event: TransferVault(indexed address,uint256,indexed address,bool)
+          handler: handleTransferVault
+      file: ./src/Vaults/DBSFVaultHandlers.ts
+  - kind: ethereum/contract
+    name: NSFVaultFactory
+    network: mainnet
+    source:
+      abi: NSFVaultFactory
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - Vault
+        - VaultCollateral
+        - VaultDebt
+        - YTVault
+        - YTVaultCollateral
+        - YTVaultDebt
+      abis:
+        - name: NSFVaultFactory
+          file: ./abis/NSFVaultFactory.json
+      eventHandlers:
+        - event: OpenVault(indexed address,uint256)
+          handler: handleOpenVault
+        - event: CloseVault(indexed address,uint256)
+          handler: handleCloseVault
+        - event: AdjustVault(indexed address,uint256)
+          handler: handleAdjustVault
+        - event: AuctionLiquidation(indexed address,uint256,uint256)
+          handler: handleAuctionLiquidation
+        - event: BidOnLiquidation(uint256)
+          handler: handleBidOnLiquidation
+        - event: ClaimLiquidation(uint256)
+          handler: handleClaimLiquidation
+        - event: InstantLiquidation(indexed address,uint256)
+          handler: handleInstantLiquidation
+        - event: ClaimRebate(indexed address,address)
+          handler: handleClaimRebate
+        - event: OpenYTVault(indexed address,uint256)
+          handler: handleOpenYTVault
+        - event: CloseYTVault(indexed address,uint256)
+          handler: handleCloseYTVault
+        - event: AdjustYTVault(indexed address,uint256)
+          handler: handleAdjustYTVault
+        - event: AuctionYTLiquidation(indexed address,uint256,uint256)
+          handler: handleAuctionYTLiquidation
+        - event: InstantYTLiquidation(indexed address,uint256)
+          handler: handleInstantYTLiquidation
+        - event: BidOnYTLiquidation(uint256)
+          handler: handleBidOnYTLiquidation
+        - event: ClaimYTLiquidation(uint256)
+          handler: handleClaimYTLiquidation
+        - event: ClaimYTRebate(indexed address,address)
+          handler: handleClaimYTRebate
+        - event: TransferVault(indexed address,uint256,indexed address,bool)
+          handler: handleTransferVault
+      file: ./src/Vaults/NSFVaultHandlers.ts
+  - kind: ethereum/contract
+    name: SBNSFVaultFactory
+    network: mainnet
+    source:
+      abi: SBNSFVaultFactory
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - Vault
+        - VaultCollateral
+        - VaultDebt
+        - YTVault
+        - YTVaultCollateral
+        - YTVaultDebt
+      abis:
+        - name: SBNSFVaultFactory
+          file: ./abis/SBNSFVaultFactory.json
+      eventHandlers:
+        - event: OpenVault(indexed address,uint256)
+          handler: handleOpenVault
+        - event: CloseVault(indexed address,uint256)
+          handler: handleCloseVault
+        - event: AdjustVault(indexed address,uint256)
+          handler: handleAdjustVault
+        - event: AuctionLiquidation(indexed address,uint256,uint256)
+          handler: handleAuctionLiquidation
+        - event: BidOnLiquidation(uint256)
+          handler: handleBidOnLiquidation
+        - event: ClaimLiquidation(uint256)
+          handler: handleClaimLiquidation
+        - event: InstantLiquidation(indexed address,uint256)
+          handler: handleInstantLiquidation
+        - event: ClaimRebate(indexed address,address)
+          handler: handleClaimRebate
+        - event: OpenYTVault(indexed address,uint256)
+          handler: handleOpenYTVault
+        - event: CloseYTVault(indexed address,uint256)
+          handler: handleCloseYTVault
+        - event: AdjustYTVault(indexed address,uint256)
+          handler: handleAdjustYTVault
+        - event: AuctionYTLiquidation(indexed address,uint256,uint256)
+          handler: handleAuctionYTLiquidation
+        - event: InstantYTLiquidation(indexed address,uint256)
+          handler: handleInstantYTLiquidation
+        - event: BidOnYTLiquidation(uint256)
+          handler: handleBidOnYTLiquidation
+        - event: ClaimYTLiquidation(uint256)
+          handler: handleClaimYTLiquidation
+        - event: ClaimYTRebate(indexed address,address)
+          handler: handleClaimYTRebate
+        - event: TransferVault(indexed address,uint256,indexed address,bool)
+          handler: handleTransferVault
+      file: ./src/Vaults/SBNSFVaultHandlers.ts
